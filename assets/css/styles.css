@@ -533,7 +533,19 @@ img{
     }
 }
 
+/*===== Added in-between for the IPad Pro =====*/
 @media screen and (min-width: 1024px){
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home__img{
+        width: 70%;
+        right: 5%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
     .bd-grid{
         margin-left: auto;
         margin-right: auto;
