@@ -269,6 +269,10 @@ img{
 .about__social-icon:hover{
     color: var(--first-color);
 }
+.about__social svg {
+    display: inline-block;
+    vertical-align: middle;
+}
 
 /*===== SKILLS =====*/
 .skills{
