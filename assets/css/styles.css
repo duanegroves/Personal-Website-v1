@@ -526,6 +526,9 @@ img{
     .contact__form{
         width: 380px;
     }
+    .contact__form textarea {
+        resize: vertical;
+    }
 
     .footer__container{
         grid-template-columns: repeat(3, 1fr);
@@ -545,7 +548,7 @@ img{
     }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1280px) {
     .bd-grid{
         margin-left: auto;
         margin-right: auto;
