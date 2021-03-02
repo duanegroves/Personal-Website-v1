@@ -313,6 +313,7 @@ img{
 }
 .portfolio__img img{
     border-radius: .5rem;
+    object-fit: cover;
 }
 .portfolio__link{
     position: absolute;
@@ -333,6 +334,8 @@ img{
 }
 .portfolio__link-name{
     color: var(--dark-color);
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 /*===== BLOG =====*/
