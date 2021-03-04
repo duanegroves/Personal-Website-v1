@@ -206,15 +206,15 @@
                     <span class="contact__text">1321 N Lincoln Ave, #2074<br> Urbana, IL 61801</span>
                 </div>
 
-                <form action="" class="contact__form">
+                <form action="/assets/php/contactForm.php" method="post" class="contact__form">
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
+                        <input type="text" placeholder="Name" class="contact__input" required>
+                        <input type="email" placeholder="Email" class="contact__input" required>
                     </div>
 
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <textarea name="message" id="" cols="0" rows="10" class="contact__input" required></textarea>
 
-                    <input type="submit" value="Submit" class="contact__button">
+                    <input type="submit" value="Send" class="contact__button">
                 </form>
             </div>
         </section>
