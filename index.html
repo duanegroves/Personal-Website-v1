@@ -11,6 +11,7 @@
 
     <!--===== CSS =====-->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
 
     <!--===== SWIPER BUNDLE =====-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -70,8 +71,9 @@
                 <div>
                     <h2 class="about__subtitle">I am Duane Groves</h2>
                     <span class="about__profession">CS+Philosophy @UIUC</span>
-                    <p class="about__text">I'm currently exploring ethical theories and how I can use my philosophical background in the field of CS. 
-                        I'm fascinated by all-things philosophy and psychology, and love the idea of creating products that can change someone's life for the better.
+                    <p class="about__text">I'm currently exploring ethical theories and how I can use my philosophical 
+                        background in the field of CS. I'm fascinated by all-things philosophy and psychology, and love 
+                        the idea of creating products that can change someone's life for the better.
                     </p>
 
                     <div class="about__social">
@@ -92,16 +94,15 @@
             <div class="skills__container bd-grid">
                 <div class="skills__box">
                     <h3 class="skills__subtitle">Development</h3>
+                    <span class="skills__name">C++</span>
                     <span class="skills__name">Html</span>
                     <span class="skills__name">Css</span>
                     <span class="skills__name">Javascript</span>
                     <span class="skills__name">Scss</span>
                     <span class="skills__name">React</span>
-                    <span class="skills__name">Vue</span>
                     
                     <h3 class="skills__subtitle">Design</h3>
                     <span class="skills__name">Figma</span>
-                    <span class="skills__name">Adobe XD</span>
                     <span class="skills__name">Photoshop</span>
                 </div>
 
@@ -127,7 +128,7 @@
                     <img src="assets/img/Hack Illinois Logo.png" alt="">
 
                     <div class="portfolio__link">
-                        <a onclick="window.open('https://github.com/HackIllinois/android)" class="portfolio__link-name">HackIllinois</a>
+                        <a onclick="window.open('https://github.com/HackIllinois/android')" class="portfolio__link-name">HackIllinois</a>
                     </div>
                 </div>
                 <div class="portfolio__img">
@@ -167,23 +168,62 @@
 
             <div class="blog__container bd-grid swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="blog__content swiper-slide">
-                        <img src="" alt="" class="blog__img">
-                        <h3 class="blog__title">1</h3>
-                        <span class="blog__client">Client</span>
-                        <p class="blog__description">this is the description</p>
+                    <div class="post__module swiper-slide">
+                        <!-- Thumbnail-->
+                        <div class="post__thumbnail">
+                            <div class="post__date">
+                                <div class="post__day">27</div>
+                                <div class="post__month">Mar</div>
+                            </div>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"/>
+                        </div>
+                        <!-- Post Content-->
+                        <div class="post__content">
+                            <div class="post__category">Photos</div>
+                            <h1 class="post__title">City Lights in New York</h1>
+                            <h2 class="post__subtitle">The city that never sleeps.</h2>
+                            <p class="post__description">New York, the largest city in the U.S., is an architectural 
+                                marvel with plenty of historic monuments, magnificent buildings and countless dazzling 
+                                skyscrapers.</p>
+                        </div>
                     </div>
-                    <div class="blog__content swiper-slide">
-                        <img src="" alt="" class="blog__img">
-                        <h3 class="blog__title">2</h3>
-                        <span class="blog__client">Client</span>
-                        <p class="blog__description">this is the description</p>
+                    <div class="post__module swiper-slide">
+                        <!-- Thumbnail-->
+                        <div class="post__thumbnail">
+                            <div class="post__date">
+                                <div class="post__day">27</div>
+                                <div class="post__month">Mar</div>
+                            </div>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"/>
+                        </div>
+                        <!-- Post Content-->
+                        <div class="post__content">
+                            <div class="post__category">Photos</div>
+                            <h1 class="post__title">City Lights in New York</h1>
+                            <h2 class="post__subtitle">The city that never sleeps.</h2>
+                            <p class="post__description">New York, the largest city in the U.S., is an architectural 
+                                marvel with plenty of historic monuments, magnificent buildings and countless dazzling 
+                                skyscrapers.</p>
+                        </div>
                     </div>
-                    <div class="blog__content swiper-slide">
-                        <img src="" alt="" class="blog__img">
-                        <h3 class="blog__title">3</h3>
-                        <span class="blog__client">Client</span>
-                        <p class="blog__description">this is the description</p>
+                    <div class="post__module swiper-slide">
+                        <!-- Thumbnail-->
+                        <div class="post__thumbnail">
+                            <div class="post__date">
+                                <div class="post__day">27</div>
+                                <div class="post__month">Mar</div>
+                            </div>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"/>
+                        </div>
+                        <!-- Post Content-->
+                        <div class="post__content">
+                            <div class="post__category">Photos</div>
+                            <h1 class="post__title">City Lights in New York</h1>
+                            <h2 class="post__subtitle">The city that never sleeps.</h2>
+                            <p class="post__description">New York, the largest city in the U.S., is an architectural 
+                                marvel with plenty of historic monuments, magnificent buildings and countless dazzling 
+                                skyscrapers.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -257,7 +297,11 @@
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--===== MAIN JS =====-->
+    <!--===== JQuery =====-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+    <!--===== Custom JS =====-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/blog.js"></script>
 </body>
 </html>
