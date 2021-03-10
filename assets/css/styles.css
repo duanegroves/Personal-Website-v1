@@ -244,6 +244,10 @@ img{
     display: block;
     margin-bottom: var(--mb-4);
 }
+.about__text a {
+    color: var(--first-color);
+    text-decoration: underline;
+}
 .resume__button{
     background-color: var(--first-color);
     color: var(--white-color);
