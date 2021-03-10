@@ -47,8 +47,6 @@
     --z-fixed: 100;
 }
 
-
-
 /*===== BASE =====*/
 *,::before,::after{
     box-sizing: border-box;
@@ -242,13 +240,6 @@ img{
 .about__text{
     margin-bottom: var(--mb-4);
 }
-.about__text a {
-    color: var(--first-color);
-    text-decoration: underline;
-}
-.about__text a:hover {
-    color: var(--dark-color);
-}
 .about__profession{
     display: block;
     margin-bottom: var(--mb-4);
@@ -313,20 +304,20 @@ img{
     border-radius: .5rem;
 }
 
-/*===== project =====*/
-.project__container{
+/*===== PORTFOLIO =====*/
+.portfolio__container{
     justify-items: center;
     row-gap: 2rem;
 }
-.project__img{
+.portfolio__img{
     position: relative;
     overflow: hidden;
 }
-.project__img img{
+.portfolio__img img{
     border-radius: .5rem;
     object-fit: cover;
 }
-.project__link{
+.portfolio__link{
     position: absolute;
     bottom: -100%;
     width: 100%;
@@ -340,10 +331,10 @@ img{
     backdrop-filter: blur(10px);
     transition: .3s;
 }
-.project__img:hover .project__link{
+.portfolio__img:hover .portfolio__link{
     bottom: 0;
 }
-.project__link-name{
+.portfolio__link-name{
     color: var(--dark-color);
     font-size: var(--medium-font-size);
     font-weight: bold;
@@ -600,7 +591,7 @@ img{
         align-items: center;
     }
 
-    .project__container{
+    .portfolio__container{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem;
